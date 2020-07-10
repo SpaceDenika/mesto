@@ -33,5 +33,3 @@ form.addEventListener('submit', (event) => {
 
   event.preventDefault();
 })
-
-formElement.addEventListener('submit', formSubmitHandler)
