@@ -1,7 +1,6 @@
 .header {
   position: relative;
   margin: 45px auto 40px;
-  width: 100%;
   max-width: 882px;
   min-height: 74px;
 }
@@ -27,5 +26,12 @@
 @media screen and (max-width: 640px) {
   .header {
     max-width: 440px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .header {
+    min-height: 56px;
+    margin: 28px auto 42px;
   }
 }
