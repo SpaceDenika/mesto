@@ -12,4 +12,5 @@
 
 .element__button:hover {
   outline: none;
+  cursor: pointer;
 }
