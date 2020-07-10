@@ -1,0 +1,5 @@
+.element__cell {
+  display: flex;
+  flex-direction: column;
+  max-width: 282px;
+}
