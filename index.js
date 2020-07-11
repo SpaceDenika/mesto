@@ -33,11 +33,6 @@ function formSubmitHandler (evt) {
 
   togglePopup();
 
-<<<<<<< HEAD
-  event.preventDefault();
-})
-=======
 }
 
 form.addEventListener('submit', formSubmitHandler);
->>>>>>> develop

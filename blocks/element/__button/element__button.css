@@ -14,9 +14,6 @@
 
 .element__button:hover {
   outline: none;
-<<<<<<< HEAD
-=======
   opacity: .6;
->>>>>>> develop
   cursor: pointer;
 }
