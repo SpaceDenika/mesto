@@ -1,15 +1,29 @@
 .profile__info {
+<<<<<<< HEAD
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+=======
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  grid-template-areas:
+    "name button"
+    "profession .";
+>>>>>>> develop
   color: #FFFFFF;
   margin: 0;
+  grid-gap: 16px 17px;
 }
 
 @media screen and (max-width: 768px) {
   .profile__info {
+<<<<<<< HEAD
     align-items: center;
+=======
+    grid-gap: 14px 5px;
+>>>>>>> develop
   }
 }

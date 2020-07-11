@@ -1,15 +1,26 @@
 .profile__info-profession {
+  max-width: 500px;
+  grid-area: profession;
   font-weight: normal;
   font-size: 18px;
   line-height: 1.22;
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .profile__info-profession {
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .profile__info-profession {
-    font-size: 14px;
-    line-height: 1.2;
-    text-align: center;
-    margin-bottom: 36px;
+   max-width: 250px;
+ }
   }
-}

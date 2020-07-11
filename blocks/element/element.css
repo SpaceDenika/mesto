@@ -24,7 +24,10 @@
     max-width: 440px;
     grid-template-columns: repeat(1, minmax(min-content, 282px));
     grid-template-rows: none;
+<<<<<<< HEAD
     row-gap: 20px;
+=======
+>>>>>>> develop
     margin: 36px auto 48px;
   }
 }

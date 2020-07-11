@@ -23,6 +23,14 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    margin: 28px auto 38px;
+    min-height: 56px;
+  }
+}
+
+
 @media screen and (max-width: 640px) {
   .header {
     max-width: 440px;
