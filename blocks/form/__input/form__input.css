@@ -1,0 +1,20 @@
+.form__input {
+  position: relative;
+  width: 358px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 425px) {
+  .form__input-profession {
+    width: 100%;
+  }
+}
