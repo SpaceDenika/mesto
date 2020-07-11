@@ -11,27 +11,28 @@ function togglePopup() {
   popup.classList.toggle('popup_opened');
 }
 
+function openPopup() {
 
-openPopupButton.addEventListener('click', () => {
   inputName.value = profileName.textContent;
   inputProfession.value = profileProfession.textContent;
 
   togglePopup();
 
-})
+}
+
+openPopupButton.addEventListener('click', openPopup);
 
 closePopupButton.addEventListener('click', togglePopup);
 
-form.addEventListener('submit', (event) => {
-  inputName.value
-  inputProfession.value
+function formSubmitHandler (evt) {
+
+  evt.preventDefault();
 
   profileName.textContent = inputName.value;
   profileProfession.textContent = inputProfession.value;
 
   togglePopup();
 
-  event.preventDefault();
-})
+}
 
-formElement.addEventListener('submit', formSubmitHandler)
+form.addEventListener('submit', formSubmitHandler);

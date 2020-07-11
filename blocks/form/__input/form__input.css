@@ -1,6 +1,7 @@
 .form__input {
   position: relative;
   width: 358px;
+  min-height: 27px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.21;
@@ -14,7 +15,7 @@
 }
 
 @media screen and (max-width: 425px) {
-  .form__input-profession {
+  .form__input {
     width: 100%;
   }
 }
