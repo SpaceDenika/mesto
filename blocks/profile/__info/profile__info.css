@@ -5,6 +5,7 @@
   grid-template-areas:
     "name button"
     "profession .";
+
   color: #FFFFFF;
   margin: 0;
   grid-gap: 16px 17px;
