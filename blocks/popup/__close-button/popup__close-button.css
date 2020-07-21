@@ -11,10 +11,10 @@
   border: none;
   background-color: transparent;
   transition: opacity .5s ease;
+  outline: none;
 }
 
 .popup__close-button:hover {
   opacity: .6;
   cursor: pointer;
-  outline: none;
 }
