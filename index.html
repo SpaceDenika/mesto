@@ -26,54 +26,6 @@
 
       <section class="elements">
         <ul class="element">
-          <li class="element__cell">
-            <button type="button" class="element__button-trash"></button>
-            <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-            <div class="element__group">
-              <p class="element__text">Карачаевск</p>
-              <button type="button" class="element__button-like"></button>
-            </div>
-          </li>
-          <li class="element__cell">
-            <button type="button" class="element__button-trash"></button>
-            <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
-            <div class="element__group">
-              <p class="element__text">Гора Эльбрус</p>
-              <button type="button" class="element__button-like"></button>
-            </div>
-          </li>
-          <li class="element__cell">
-            <button type="button" class="element__button-trash"></button>
-            <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
-            <div class="element__group">
-              <p class="element__text">Домбай</p>
-              <button type="button" class="element__button-like"></button>
-            </div>
-          </li>
-          <li class="element__cell">
-            <button type="button" class="element__button-trash"></button>
-            <img class="element__image" src="./images/elbrus-2.jpg" alt="Эльбрус">
-            <div class="element__group">
-              <p class="element__text">Гора Эльбрус</p>
-              <button type="button" class="element__button-like"></button>
-            </div>
-          </li>
-          <li class="element__cell">
-            <button type="button" class="element__button-trash"></button>
-            <img class="element__image" src="./images/dombai-2.jpg" alt="Домбай">
-            <div class="element__group">
-              <p class="element__text">Домбай</p>
-              <button type="button" class="element__button-like"></button>
-            </div>
-          </li>
-          <li class="element__cell">
-            <button type="button" class="element__button-trash"></button>
-            <img class="element__image" src="./images/kar-cher.jpg" alt="Карачаево-Черкесск">
-            <div class="element__group">
-              <p class="element__text">Карачаево-Черкессия</p>
-              <button type="button" class="element__button-like"></button>
-            </div>
-          </li>
         </ul>
       </section>
     </main>
@@ -82,7 +34,7 @@
     </footer>
   </div>
 
-  <div class="popup">
+  <div class="popup popup_type_edit-profile">
     <div class="popup__container">
       <button type="button" class="popup__close-button"></button>
       <form action="#" method="post" name="form" class="form">
@@ -95,8 +47,8 @@
       </form>
     </div>
   </div>
-<!--
-  <div class="popup">
+
+  <div class="popup popup_type_add-card">
     <div class="popup__container">
       <button type="button" class="popup__close-button"></button>
       <form action="#" method="post" name="form" class="form">
@@ -108,7 +60,27 @@
         </fieldset>
       </form>
     </div>
-  </div>-->
+  </div>
+
+  <div class="popup popup_type_image">
+      <figure class="figure">
+        <button type="button" class="popup__close-button"></button>
+        <img class="figure__image" src="" alt="">
+        <figcaption class="figure__caption"></figcaption>
+      </figure>
+  </div>
+
+  <template class="template-card">
+    <li class="element__cell">
+      <button type="button" class="element__button-trash"></button>
+      <div class="element__image" style=""></div>
+      <div class="element__group">
+        <p class="element__text"></p>
+        <button type="button" class="element__button-like"></button>
+      </div>
+    </li>
+  </template>
+
 <script src="index.js"></script>
 </body>
 </html>

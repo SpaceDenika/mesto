@@ -1,0 +1,9 @@
+.figure {
+  position: relative;
+  max-width: 75vw;
+  max-height: 75vh;
+  box-shadow: none;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 5;
+}

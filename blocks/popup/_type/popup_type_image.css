@@ -1,0 +1,7 @@
+.popup_type_image {
+
+}
+
+.popup_type_image:after {
+  opacity: .9;
+}
