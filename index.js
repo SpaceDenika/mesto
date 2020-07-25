@@ -107,15 +107,15 @@ const initialCards = [
 const cardTemplate = document.querySelector('.template-card').content.querySelector('.element__cell');
 const list = document.querySelector('.element');
 
-initialCards.forEach((data) => {
-  renderCard(data);
-});
-
 function renderCard(data) {
 
   list.prepend(createCard(data));
 
 }
+
+initialCards.forEach((data) => {
+  renderCard(data);
+});
 
 function handleLikeClick(evt) {
   const likeButton = list.querySelector('.element__button-like');
