@@ -1,6 +1,6 @@
 .figure__image {
-  width: 75vw;
-  height: 75vh;
+  max-width: 75vw;
+  max-height: 75vh;
   box-shadow: none;
   margin: 0;
   padding: 0;
@@ -8,7 +8,7 @@
 
 @media screen and (max-width: 425px) {
   .figure__image {
-    height: 299px;
-    width: 240px;
+    max-height: 299px;
+    max-width: 240px;
   }
 }
