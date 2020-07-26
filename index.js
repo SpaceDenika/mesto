@@ -28,10 +28,6 @@ const inputLink = addCardForm.querySelector('.form__input_type_link');
 
 
 function togglePopup(editProfilePopup) {
-  if (!editProfilePopup.classList.contains('.popup_opened')) {
-    inputName.value = profileName.textContent;
-    inputProfession.value = profileProfession.textContent;
-  }
   editProfilePopup.classList.toggle('popup_opened');
   containerPopup.classList.toggle('popup__container_opened');
 }
@@ -59,10 +55,15 @@ editProfileForm.addEventListener('submit', editProfileFormSubmitHandler);
 addCardForm.addEventListener('submit', addCardFormSubmitHandler);
 
 editProfilePopupButton.addEventListener('click', () => {
+  if (!editProfilePopup.classList.contains('.popup_opened')) {
+    inputName.value = profileName.textContent;
+    inputProfession.value = profileProfession.textContent;
+  }
   togglePopup(editProfilePopup);
 })
 
 editProfileClosePopupButton.addEventListener('click', () => {
+
   togglePopup(editProfilePopup);
 })
 
@@ -118,7 +119,6 @@ initialCards.forEach((data) => {
 });
 
 function handleLikeClick(evt) {
-  const likeButton = list.querySelector('.element__button-like');
   evt.target.classList.toggle('element__button-like_active');
 
 }
