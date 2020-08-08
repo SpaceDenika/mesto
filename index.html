@@ -40,8 +40,8 @@
       <form action="#" method="post" name="form" class="form">
         <fieldset class="form__contact-info">
           <p class="form__label">Редактировать профиль</p>
-          <input type="text" name="name" placeholder="Имя" value="" class="form__input form__input_type_name">
-          <input type="text" name="profession" placeholder="Профессия" value="" class="form__input form__input_type_profession">
+          <input type="text" name="name" placeholder="Имя" value="" class="form__input form__input_type_name" required minlength=2 maxlength=40>
+          <input type="text" name="profession" placeholder="Профессия" value="" class="form__input form__input_type_profession" required minlength=2 maxlength=200>
           <button type="submit" value="Отправить на сервер" class="form__button">Сохранить</button>
         </fieldset>
       </form>
@@ -54,8 +54,8 @@
       <form action="#" method="post" name="form" class="form">
         <fieldset class="form__contact-info">
           <p class="form__label">Новое место</p>
-          <input type="text" name="name" placeholder="Название" value="" class="form__input form__input_type_title">
-          <input type="text" name="profession" placeholder="Ссылка на картинку" value="" class="form__input form__input_type_link">
+          <input type="text" name="name" placeholder="Название" value="" class="form__input form__input_type_title" required minlength=1 maxlength=30>
+          <input type="url" name="link" placeholder="Ссылка на картинку" value="" class="form__input form__input_type_link" required>
           <button type="submit" value="Отправить на сервер" class="form__button">Создать</button>
         </fieldset>
       </form>
@@ -82,5 +82,6 @@
   </template>
 
 <script src="index.js"></script>
+<script src="validate.js"></script>
 </body>
 </html>
